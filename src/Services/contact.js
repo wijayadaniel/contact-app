@@ -7,7 +7,6 @@ export const getContactList = async () => {
   const {
     data: {data, message},
   } = res;
-  console.log('tambahin loading ato placeholder loader', message);
 
   let contactList = [];
   let aCode = 'A'.charCodeAt(0);
@@ -27,8 +26,6 @@ export const getContactList = async () => {
       contactList.push(obj);
     }
   }
-  console.log('*******', contactList);
-  // console.log(' ------', contactList);
 
   return contactList;
 };
